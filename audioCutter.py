@@ -1,4 +1,5 @@
 from pydub import AudioSegment
+import librosa
 from pydub.silence import split_on_silence
 
 def speed_change(sound, speed=1.0):

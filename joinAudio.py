@@ -1,6 +1,5 @@
 import wave
 from pydub import AudioSegment
-from pydub.playback import play
 
 word = input("enter a word: ")
 word += word[-1]
@@ -43,5 +42,3 @@ concatenate_audio_wave(letters, 'output.wav')
 audio = AudioSegment.from_file('output.wav', format='wav')
 audio = speed_change(audio, 4)
 audio.export("output.wav", format="wav")
-
-

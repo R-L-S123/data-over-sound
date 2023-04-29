@@ -2,7 +2,6 @@ import wave
 from pydub import AudioSegment
 
 word = input("enter a word: ")
-word += word[-1]
 wordBinary = ''.join(format(ord(i), '08b') for i in word)
 letters = []
 
